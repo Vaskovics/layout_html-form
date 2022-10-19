@@ -1,9 +1,6 @@
 /* styles go here */
+
 .label {
   display: block;
-  margin: 10px 0;
-}
-
-.set {
-  margin: 20px 0;
+  padding: 5px;
 }
