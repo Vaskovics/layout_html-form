@@ -22,21 +22,19 @@
       method="post"
       class="form"
     >
-      <fieldset class="set1">
+      <fieldset class="set">
         <legend>Personal information</legend>
-        <label
-          class="label"
-          required
-        >
-          Surnmae
+        <label class="input1">
+          Surname:
           <input
+            required
             type="text"
             name="Sname"
             id="Sname"
           >
         </label>
-        <label class="label">
-          Name
+        <label class="input1">
+          Name:
           <input
             type="text"
             name="Fname"
@@ -44,20 +42,19 @@
           >
 
         </label>
-        <label class="label">
-          How old are you?
+        <label class="input1">
+          How old are You?
           <input
-            type="numer"
+            type="number"
             name="age"
             id="age"
-            size="4"
             min="1"
             max="100"
             value="12"
           >
 
         </label>
-        <label class="label">
+        <label class="input1">
           Full date of birth:
           <input
             type="date"
@@ -65,7 +62,7 @@
             name="birth"
           >
         </label>
-        <label class="label">
+        <label class="input1">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -77,28 +74,30 @@
 
       <fieldset class="set">
         <legend>Registration</legend>
-        <label class="label">
-          Email:
+        <label class="input2">
+          E-mail:
           <input
             placeholder="email@example.com"
             type="email"
             name="email"
             id="emal"
           >
-          <label class="label">
-            Password
-            <input
-              type="password"
-              name="password"
-              id="password"
-            >
-          </label>
         </label>
-        <label class="label"></label>
+        <label class="input2">
+          Password:
+          <input
+            type="password"
+            name="password"
+            id="password"
+            maxlength="15"
+            minlength="5"
+            required
+          >
+        </label>
       </fieldset>
       <fieldset class="set">
         <legend>An interesting fact about you!</legend>
-        <label class="firstLabel">
+        <label class="input3">
           Do you love cats?
           <input
             type="radio"
@@ -115,7 +114,7 @@
           >
           <label for="no">No</label>
         </label>
-        <label class="label">
+        <label class="input3">
           What is your favorite color?
           <input
             type="color"
@@ -123,7 +122,7 @@
             id="color"
           >
         </label>
-        <label class="date">
+        <label class="input3">
           What time do you go to bed?
           <input
             type="time"
@@ -131,7 +130,7 @@
             name="time"
           >
         </label>
-        <label class="label">
+        <label class="input3">
           What are your favorite brand of cars?
           <select
             name="cars"
@@ -143,39 +142,38 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="laabel">
+        <label class="input3">
           How do you rate our work?
           <input
             type="range"
             name="rate"
             id="rate"
-            min="0"
-            max="10"
             value="0"
           >
         </label>
       </fieldset>
+
       <fieldset class="set">
         <legend>Additional info:</legend>
-        <label class="label">
+        <label class="input4">
           Comments:
           <textarea
-            autocomplete="off"
             name="comment"
             id="comment"
-            cols="15"
-            rows="2"
           >
           </textarea>
         </label>
-        <label class="label">
+        <label
+          for="recon"
+          class="input4"
+        >
           Would you recommend us?
           <select
             name="recon"
             id="recon"
           >
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>
